@@ -1,1 +1,79 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glassmorphism Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('https://images.unsplash.com/photo-1606247357835-d27fe83fc6a3') no-repeat center center/cover;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: white;
+      max-width: 500px;
+      width: 90%;
+    }
+
+    .container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .container p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      background: linear-gradient(45deg, #6d5dfc, #b17dff);
+      box-shadow: 0px 4px 15px rgba(109, 93, 252, 0.5);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .button:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 6px 20px rgba(109, 93, 252, 0.7);
+    }
+
+    @media (max-width: 768px) {
+      .container h1 {
+        font-size: 2rem;
+      }
+
+      .container p {
+        font-size: 1rem;
+      }
+
+      .button {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Galaxy</h1>
+    <p>Explore the stars and unlock the mysteries of the universe with our platform.</p>
+    <a href="#" class="button">Get Started</a>
+  </div>
